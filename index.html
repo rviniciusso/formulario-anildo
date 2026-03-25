@@ -7,74 +7,90 @@
     <title>formulario</title>
 </head>
 <body>
-    <h1>Formulario de Contato</h1>
-
-    <p>Enquete</p>
+    <h1>Formulario</h1>
     <form>
-        <label for="campo-nome">nome:</label>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+        <label for="campo-nome">Nome:</label>
         <input id="campo-nome"type="text" placeholder="digite seu nome" required>
 
         <br>
         <br>
 
-        <label for="campo-email">email:</label>
-        <input id="campo-email" type="email" placeholder="digite seu email" required> 
+        <label for="campo-email">Endereço:</label>
+        <input id="campo-email" type="text" placeholder="digite seu email" required> 
 
         <br>
         <br>
 
-        <label for="campo-senha">senha:</label>
-        <input id="campo-senha" type="password" placeholder="digite sua senha" required>
+        <label for="campo-senha">Cidade:</label>
+        <input id="campo-senha" type="text" placeholder="digite sua senha" required>
+        
 
         <br>
         <br>
 
-        <label for="assunto">Assunto:</label>
+        <label for="assunto">Estado:</label>
         <select id="assunto" name="cores">
-            <option selected disabled value=" ">Escolha uma cor</option>
-            <option value="vermelho">vermelho</option>
-            <option value="azul">Azul</option>
-            <option value="amarelo">amarelo</option>
-            <option value="verde">verde</option>
-            <option value="roxo">roxo</option>
+            <option selected disabled value=" ">Escolha um estado</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Mato Grosso">Mato Grosso</option>
         </select>
-
+        </fieldset>
         <br>
-        <br>
-        <br>
-
-        <p><b>Digite seu comentario</b></p>
-
-        <textarea rows="15" cols="45" placeholder="Digite aqui" name="comentario"></textarea>
-
-        <br>
-        <br>
-        
-        <input id="1" type="checkbox" name="1" value="12">
-        <label for="1">Quero receber newlester</label>
-        <br>
-        <br>
-
-        <input type="submit" value="enviar formulario">
-
-        
-        
-    </form>
-    <br>
-
-    <video controls width="640" height="360" poster="thumbnail_video.jpg">
-
-        <source src="videoaleatorio" type="video/mp4">
-
-        <source src="videoaleatorio" type="video/webm">
-
-        <a href="videoaleatorio">Baixe aqui</a>
-
-    </video>
-
-    <br>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
     
-    <audio src="audioaleatorio.jpg">audio</audio>
+        <p>Natureza do Cargo</p>
+
+        <input id="1" type="radio" name="1" value="12">
+        <label for="1">Gerência</label>
+        <input id="2" type="radio" name="1" value="12">
+        <label for="2">Financiero</label>
+        <input id="3" type="radio" name="1" value="12">
+        <label for="3">Recepção</label>
+        <input id="4" type="radio" name="1" value="12">
+        <label for="4">Administrativo</label>
+        <input id="5" type="radio" name="1" value="12">
+        <label for="5">Juridico</label>
+
+        <p>Área de Interesse</p>
+
+        <input id="1" type="checkbox" name="1" value="12">
+        <label for="1">Computação</label>
+        <input id="2" type="checkbox" name="1" value="12">
+        <label for="2">Biologia</label>
+        <input id="3" type="checkbox" name="1" value="12">
+        <label for="3">Meio Ambiente</label>
+        <input id="4" type="checkbox" name="1" value="12">
+        <label for="4">Engenharia</label>
+        <input id="5" type="checkbox" name="1" value="12">
+        <label for="5">Historia</label>
+        
+        
+        <br>
+        <br>
+
+
+        <label for="curriculo">Mini_currículo:</label>
+        <textarea id="curriculo" rows="5" cols="45" placeholder="Digite aqui" name="comentario"></textarea>
+
+        <br>
+        <br>
+         
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    
+    </form>
+
+    <br>
+
+    
 
 </body>
 </html>
